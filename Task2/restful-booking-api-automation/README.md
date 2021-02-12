@@ -53,7 +53,7 @@ This solution has the entire execution in one test class. I have created booking
 
 ```
 TestNG test class - src/test/missionMarsTests/testNG/TestNGSolutionTask2Test.java
-Excel location for test data - restful-booking-api-automation/src/test/resources
+Excel file location for test data - restful-booking-api-automation/src/test/resources
 
 ```
 ##### 1. Implementation with TestNG, RestAssured and Cucumber -
@@ -101,6 +101,7 @@ For execution with testng.xml, report will be available inside```restful-booking
 
 
 ------------
+
 
 
 
