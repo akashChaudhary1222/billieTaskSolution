@@ -93,7 +93,7 @@ Please read below test descriptions before running the tests.
 ------------
 
 
-For exectuion with cukesTestNG.xml, reports are located at``` restful-booking-api-automation/target/cucumber ```
+For exectuion with cukesTestNG.xml, reports are located at``` restful-booking-api-automation/target/cucumber ```.
 The auto generated web report option is enabled to check the reports instantly. That is displayed in the post execution console data by cucumber itself
 
 For execution with testng.xml, report will be available inside```restful-booking-api-automation/report ```
