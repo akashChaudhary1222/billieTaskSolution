@@ -20,7 +20,7 @@ public class GetAndDeleteStepDefs {
 
     @Given("we have {string} and {string} and bookingIds of our astronauts")
     public void weHaveFirstnameAndLastnameOfOurAstronauts(String firstName, String lastName) {
-
+        //Retrieve bookingIds for this astronaut. Further this will be used for Delete step
         List<GetBookingIdResponse> getBookingIdResponses = UtilityClass.fetchBookingId(firstName, lastName);
 
         if (!CollectionUtils.isEmpty(getBookingIdResponses)) {
@@ -34,7 +34,7 @@ public class GetAndDeleteStepDefs {
     public void weDeleteTheseBookingsByTheirID() {
         //perform DELETE request to update an existing the booking
         stepTestContext.currentEventRestAssuredResponse = UtilityClass.callDeleteBookingApi(bookingId, stepTestContext.authToken);
+        //store booking id and this will be used in validating last Get step for 404 assertion
         stepTestContext.bookingId = bookingId;
     }
-
 }

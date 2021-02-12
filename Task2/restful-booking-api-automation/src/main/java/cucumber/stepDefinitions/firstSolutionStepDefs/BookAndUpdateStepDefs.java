@@ -40,27 +40,29 @@ public class BookAndUpdateStepDefs {
     }
 
     @When("we {string} bookings for our astronauts")
-    public void weActionBookingsForOurAstronauts(String action) {
-        if (action.equalsIgnoreCase("update")) {
+    public void weActionBookingsForOurAstronauts(String event) {
+        if (event.equalsIgnoreCase("update")) {
+
+            //skip booking id validation Step because update response does not have booking id
             skipBookingIdValidation = true;
 
-            //If step is update, then we will fetch the booking ID using the GetBookingId api
+            //For update, we shall fetch the booking ID using the GetBookingId api
             String firstName, lastName;
             firstName = bookingRequest.getFirstName();
             lastName = bookingRequest.getLastName();
 
-            //Fetch booking Id for this user to update
+            //booking Id for this user to update
             int bookingId = UtilityClass.fetchBookingId(firstName, lastName).get(0).getBookingId();
 
             //store this booking id for further validation
             stepTestContext.bookingId = bookingId;
 
             //perform update request
-            performRequestToTheRestfulBookerApp(action, bookingRequest, bookingId);
+            performRequestToTheRestfulBookerApp(event, bookingRequest, bookingId);
 
         } else
-            //If this is create booking event, then simply perform create request
-            performRequestToTheRestfulBookerApp(action, bookingRequest, 0);
+            //If this is create booking event, then simply perform create request. Booking id is not required for creation
+            performRequestToTheRestfulBookerApp(event, bookingRequest, 0);
     }
 
     @And("response should have {string} non null")
@@ -75,15 +77,15 @@ public class BookAndUpdateStepDefs {
     }
 
     /**
-     * Allows you to specify URL Params to send along with URL.
+     * Helper method to perform POST and PUT calls on create and update booking Api
      *
-     * @param arg0           event or action name. e.g create
+     * @param event          event or action name. e.g create
      * @param bookingId      booking id
      * @param bookingRequest request to perform action
      */
-    private void performRequestToTheRestfulBookerApp(String arg0, BookingRequest bookingRequest, int bookingId) {
+    private void performRequestToTheRestfulBookerApp(String event, BookingRequest bookingRequest, int bookingId) {
         Response response;
-        switch (arg0.toUpperCase(Locale.ROOT)) {
+        switch (event.toUpperCase(Locale.ROOT)) {
             case "CREATE" -> {
                 response = UtilityClass.callCreateBookingApi(bookingRequest);
                 //store this response as latest and this will be used in response code, booking data, booking id assertions.

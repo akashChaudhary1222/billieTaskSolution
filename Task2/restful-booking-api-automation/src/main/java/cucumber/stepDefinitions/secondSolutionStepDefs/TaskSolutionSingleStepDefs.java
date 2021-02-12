@@ -7,10 +7,6 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import io.restassured.response.Response;
 import main.java.api.auth.AuthApi;
-import main.java.api.booking.CreateBookingApi;
-import main.java.api.booking.DeleteApi;
-import main.java.api.booking.GetBookingApi;
-import main.java.api.booking.UpdateBookingApi;
 import main.java.dto.request.AuthRequest;
 import main.java.dto.request.BookingRequest;
 import main.java.dto.response.AuthResponse;
@@ -18,7 +14,6 @@ import main.java.dto.response.Booking;
 import main.java.dto.response.BookingResponse;
 import main.java.model.BookingDataTable;
 import main.java.model.TestContext;
-import main.java.utils.JsonUtil;
 import main.java.utils.UtilityClass;
 import org.testng.Assert;
 import test.missionMarsTests.cucumber.CucumberTask2TestRunner;
@@ -27,7 +22,6 @@ import java.util.HashMap;
 import java.util.Locale;
 import java.util.Map;
 
-import static main.java.httpCore.Headers.COOKIE;
 import static main.java.utils.JsonUtil.fromJson;
 import static main.java.utils.JsonUtil.toJson;
 import static main.java.utils.PropertyUtil.getPropertyValue;
@@ -49,25 +43,30 @@ public class TaskSolutionSingleStepDefs extends CucumberTask2TestRunner {
         multipleBookingsResponseMap = new HashMap<>();
         //Loading Request Data from feature file to Class object for all the astronauts
         requestDataTable.asMaps().forEach(stringStringMap -> {
+
+            //map data with BookingDataTable model
             BookingDataTable bookingDataTable = fromJson(toJson(stringStringMap), BookingDataTable.class);
             Assert.assertNotNull(bookingDataTable, "Please initialise test data table.");
             //Prepared booking request
             BookingRequest bookingRequest = UtilityClass.prepareBookingRequestFromDataTableModel(bookingDataTable);
             int bookingId = 0;
 
-            //Send it for processing. At the time of Create and Update, I have stored bookingId as 0
+            //If Booking id is already present in this astronautBookingIdMap, that means this step is an update to an existing booking.
+            //then we get the booking id from astronautBookingIdMap and make an update.
             if (astronautBookingIdMap.containsKey(bookingDataTable.getFirstName() + bookingDataTable.getLastName())
                     && arg0.equalsIgnoreCase("update")) {
                 bookingId = astronautBookingIdMap.get(bookingDataTable.getFirstName() + bookingDataTable.getLastName());
             }
+
+            //if the step is create booking then simply create one booking. Booking id is not used in this step.
             performRequestToTheRestfulBookerApp(arg0, bookingRequest, bookingId);
         });
     }
 
     @Then("response should have HTTP status code {int}")
     public void responseShouldHaveHTTPStatusCode(int arg0) {
-        //Assert HTTP status code for saved responses
-        multipleBookingsResponseMap.forEach((k, testContext) -> testContext.getCommonRestAssuredResponse().then().assertThat().statusCode(arg0));
+        //Assert HTTP status code for all the saved responses
+        multipleBookingsResponseMap.forEach((k, testContext) -> testContext.getCurrentEventRestAssuredResponse().then().assertThat().statusCode(arg0));
     }
 
     @And("response should have {string} and it should not be null")
@@ -99,19 +98,19 @@ public class TaskSolutionSingleStepDefs extends CucumberTask2TestRunner {
             else if (arg0.equalsIgnoreCase("update")) {
                 Booking updatedBooking = testContext.getCreateUpdateRestAssuredResponse().then().extract().response().as(Booking.class);
                 bookingDataInResponse = toJson(updatedBooking);
-
+                //If this is a Getbooking step then assert updated booking data from last step with the data fetched in Getbooking response
             } else {
                 Booking updatedBooking = testContext.getGetApiRestAssuredResponse().then().extract().response().as(Booking.class);
                 bookingDataInResponse = toJson(updatedBooking);
             }
             //Assert the response data and request data
-            Assert.assertEquals(testContext.getBookingRequest(), bookingDataInResponse, "Booking data in request is not same as in response. Step: " + arg0);
+            Assert.assertEquals(testContext.getBookingRequestJson(), bookingDataInResponse, "Booking data in request is not same as in response. Step: " + arg0);
         });
     }
 
     @When("we {string} the created booking by booking Id")
     public void weTheCreatedBookingByBookingId(String arg0) {
-
+        //This is for Delete and Get steps. We perform the action received from feature file based on if the local booking id map has that data or not
         astronautBookingIdMap.forEach((astronaut, bookingId) -> {
             if (multipleBookingsResponseMap.containsKey(astronaut)) {
                 performRequestToTheRestfulBookerApp(arg0, multipleBookingsResponseMap.get(astronaut).getBookingRequestClassObject(), bookingId);
@@ -127,18 +126,8 @@ public class TaskSolutionSingleStepDefs extends CucumberTask2TestRunner {
         AuthRequest authRequest = new AuthRequest(getPropertyValue("user.name"), getPropertyValue("password"));
         //Initialising RequestSpecification for Auth API
         AuthApi authApi = new AuthApi();
-        authApi.setRequestBody(JsonUtil.toJson(authRequest));
-        //Sending POST request with valid params. We are then validating HTTP response status code and token field in response.
-        Response authRestResponse = authApi.sendRequest();
-        authRestResponse.then().assertThat()
-                //Assert HTTP status code
-                .statusCode(200).and()
-                //Assert Auth token string in response
-                .body("token", notNullValue())
-                //extract validated response
-                .extract().response();
         //Extract response as AuthResponse class
-        AuthResponse authResponse = authRestResponse.as(AuthResponse.class);
+        AuthResponse authResponse = UtilityClass.callAuthApi(authRequest);
         //Store the token for global access
         authToken = authResponse.getToken();
     }
@@ -148,62 +137,56 @@ public class TaskSolutionSingleStepDefs extends CucumberTask2TestRunner {
         Response response;
         switch (arg0.toUpperCase(Locale.ROOT)) {
             case "CREATE" -> {
-                TestContext testContext = new TestContext();
-                bookingJsonRequest = toJson(bookingRequest);
-
-                //Initialising RequestSpecification for Create Booking API
-                CreateBookingApi createBookingApi = new CreateBookingApi();
-                createBookingApi.setRequestBody(bookingJsonRequest);
-
                 //perform POST request to create a booking
-                response = createBookingApi.sendRequest();
-
-                //save test data
+                response = UtilityClass.callCreateBookingApi(bookingRequest);
+                //save latest test data from this step and this will be used in further assertions and validations
+                TestContext testContext = new TestContext();
                 testContext.setCreateUpdateRestAssuredResponse(response);
-                testContext.setCommonRestAssuredResponse(response);
-                testContext.setBookingRequest(bookingJsonRequest);
+                testContext.setCurrentEventRestAssuredResponse(response);
+                testContext.setBookingRequestJson(toJson(bookingRequest));
+
+                //store this test data against firstname and lastnames for each booking. This map is updated at each API call
                 multipleBookingsResponseMap.put(bookingRequest.getFirstName() + bookingRequest.getLastName(), testContext);
             }
             case "UPDATE" -> {
-                bookingJsonRequest = toJson(bookingRequest);
-
-                //Initialising RequestSpecification for Update Booking API
-                UpdateBookingApi updateBookingApi = new UpdateBookingApi(bookingId);
-                updateBookingApi.setRequestBody(bookingJsonRequest);
-                updateBookingApi.addHeader(COOKIE.getName(), String.format("token=%s", authToken));
                 //perform PUT request to update an existing the booking
-                response = updateBookingApi.sendRequest();
-
-                //update test data
+                response = UtilityClass.callUpdateBookingApi(bookingRequest, bookingId, authToken);
+                //save latest test data from this step and this will be used in further assertions and validations
                 TestContext testContext = new TestContext();
-                testContext.setBookingRequest(bookingJsonRequest);
-                testContext.setCommonRestAssuredResponse(response);
+                testContext.setCurrentEventRestAssuredResponse(response);
                 testContext.setCreateUpdateRestAssuredResponse(response);
-                testContext.setBookingRequest(bookingJsonRequest);
+                testContext.setBookingRequestJson(toJson(bookingRequest));
                 testContext.setBookingRequestClassObject(bookingRequest);
+
+                //This map is updated at each API call
                 multipleBookingsResponseMap.put(bookingRequest.getFirstName() + bookingRequest.getLastName(), testContext);
             }
             case "GET" -> {
+                //fetch already saved test data for this booking and update with new
+                // so that this can be validated with the response received from Get Step
                 TestContext testContext = multipleBookingsResponseMap.get(bookingRequest.getFirstName() + bookingRequest.getLastName());
-                //Initialising RequestSpecification for Get Booking API
-                GetBookingApi getBookingApi = new GetBookingApi(bookingId);
-                getBookingApi.addHeader(COOKIE.getName(), String.format("token=%s", authToken));
                 //perform GET request to update an existing the booking
-                response = getBookingApi.sendRequest();
-                testContext.setCommonRestAssuredResponse(response);
+                response = UtilityClass.callGetBookingApi(bookingId, authToken);
+                //Store data in test context which will be used in next Steps
+                testContext.setCurrentEventRestAssuredResponse(response);
                 testContext.setGetApiRestAssuredResponse(response);
                 testContext.setAssertWithUpdate(true);
+
+                //This map is updated at each API call
                 multipleBookingsResponseMap.put(bookingRequest.getFirstName() + bookingRequest.getLastName(), testContext);
             }
             case "DELETE" -> {
+                //fetch already saved test data for this booking. Delete will be performed on existing bookings
                 TestContext testContext = multipleBookingsResponseMap.get(bookingRequest.getFirstName() + bookingRequest.getLastName());
-                //Initialising RequestSpecification for Delete Booking API
-                DeleteApi deleteApi = new DeleteApi(bookingId);
-                deleteApi.addHeader(COOKIE.getName(), String.format("token=%s", authToken));
                 //perform DELETE request to update an existing the booking
-                response = deleteApi.sendRequest();
-                testContext.setCommonRestAssuredResponse(response);
+
+                response = UtilityClass.callDeleteBookingApi(bookingId, authToken);
+
+                //Store data in test context which will be used in next Steps
+                testContext.setCurrentEventRestAssuredResponse(response);
                 testContext.setDeleteApiRestAssuredResponse(response);
+
+                //This map is updated at each API call
                 multipleBookingsResponseMap.put(bookingRequest.getFirstName() + bookingRequest.getLastName(), testContext);
             }
         }

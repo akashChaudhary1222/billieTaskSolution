@@ -9,18 +9,18 @@ public class TestContext {
     private Response createUpdateRestAssuredResponse;
     private Response getApiRestAssuredResponse;
     private Response deleteApiRestAssuredResponse;
-    private Response commonRestAssuredResponse;
+    private Response currentEventRestAssuredResponse;
     private BookingResponse bookingResponse;
-    private String bookingRequest;
+    private String bookingRequestJson;
     private boolean assertWithUpdate;
 
 
-    public Response getCommonRestAssuredResponse() {
-        return commonRestAssuredResponse;
+    public Response getCurrentEventRestAssuredResponse() {
+        return currentEventRestAssuredResponse;
     }
 
-    public void setCommonRestAssuredResponse(Response commonRestAssuredResponse) {
-        this.commonRestAssuredResponse = commonRestAssuredResponse;
+    public void setCurrentEventRestAssuredResponse(Response currentEventRestAssuredResponse) {
+        this.currentEventRestAssuredResponse = currentEventRestAssuredResponse;
     }
 
 
@@ -77,12 +77,12 @@ public class TestContext {
         this.createUpdateRestAssuredResponse = createUpdateRestAssuredResponse;
     }
 
-    public String getBookingRequest() {
-        return bookingRequest;
+    public String getBookingRequestJson() {
+        return bookingRequestJson;
     }
 
-    public void setBookingRequest(String bookingRequest) {
-        this.bookingRequest = bookingRequest;
+    public void setBookingRequestJson(String bookingRequestJson) {
+        this.bookingRequestJson = bookingRequestJson;
     }
 
 }
