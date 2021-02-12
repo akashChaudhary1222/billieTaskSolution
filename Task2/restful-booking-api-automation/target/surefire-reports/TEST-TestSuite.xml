@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="40.721" tests="4" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="17.059" tests="7" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
-    <property name="java.class.path" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/test-classes:/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/classes:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/akashchaudhary/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/akashchaudhary/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/akashchaudhary/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/akashchaudhary/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/akashchaudhary/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/akashchaudhary/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/akashchaudhary/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/akashchaudhary/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/akashchaudhary/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/akashchaudhary/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/akashchaudhary/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/akashchaudhary/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/akashchaudhary/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/akashchaudhary/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/akashchaudhary/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/akashchaudhary/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured-all/4.3.3/rest-assured-all-4.3.3.jar:/Users/akashchaudhary/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/akashchaudhary/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/akashchaudhary/.m2/repository/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar:/Users/akashchaudhary/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/akashchaudhary/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/akashchaudhary/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/akashchaudhary/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/akashchaudhary/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/akashchaudhary/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10/jackson-databind-2.9.10.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/akashchaudhary/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-picocontainer/6.8.1/cucumber-picocontainer-6.8.1.jar:/Users/akashchaudhary/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi-ooxml/3.7/poi-ooxml-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi/3.7/poi-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.7/poi-ooxml-schemas-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/akashchaudhary/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/akashchaudhary/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0/geronimo-stax-api_1.0_spec-1.0.jar:/Users/akashchaudhary/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/akashchaudhary/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
+    <property name="java.class.path" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/test-classes:/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/classes:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/kukdi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/kukdi/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/kukdi/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/kukdi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/kukdi/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/kukdi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/kukdi/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/kukdi/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/kukdi/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/kukdi/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/kukdi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/kukdi/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/kukdi/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/kukdi/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/kukdi/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/kukdi/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/kukdi/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/kukdi/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/kukdi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/kukdi/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured-all/4.3.3/rest-assured-all-4.3.3.jar:/Users/kukdi/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/kukdi/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/kukdi/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/kukdi/.m2/repository/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar:/Users/kukdi/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/kukdi/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/kukdi/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/kukdi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/kukdi/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/kukdi/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/kukdi/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/kukdi/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/kukdi/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/kukdi/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10/jackson-databind-2.9.10.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/kukdi/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/kukdi/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/kukdi/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/kukdi/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-picocontainer/6.8.1/cucumber-picocontainer-6.8.1.jar:/Users/kukdi/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi-ooxml/3.7/poi-ooxml-3.7.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi/3.7/poi-3.7.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.7/poi-ooxml-schemas-3.7.jar:/Users/kukdi/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/kukdi/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/kukdi/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0/geronimo-stax-api_1.0_spec-1.0.jar:/Users/kukdi/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/kukdi/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="java.vendor.url" value="https://openjdk.java.net/"/>
@@ -11,43 +11,43 @@
     <property name="os.name" value="Mac OS X"/>
     <property name="java.vm.specification.version" value="15"/>
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
-    <property name="user.country" value="GB"/>
+    <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/surefire/surefirebooter17839492697786916561.jar /Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/surefire 2021-02-12T21-37-44_233-jvmRun1 surefire9235542141822614041tmp surefire_07477769193192879118tmp"/>
+    <property name="sun.java.command" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/surefire/surefirebooter12802186238529460538.jar /Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/surefire 2021-02-12T23-20-10_375-jvmRun1 surefire5556792358359149809tmp surefire_03798694252937890615tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/test-classes:/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/classes:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/akashchaudhary/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/akashchaudhary/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/akashchaudhary/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/akashchaudhary/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/akashchaudhary/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/akashchaudhary/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/akashchaudhary/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/akashchaudhary/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/akashchaudhary/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/akashchaudhary/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/akashchaudhary/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/akashchaudhary/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/akashchaudhary/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/akashchaudhary/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/akashchaudhary/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/akashchaudhary/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/akashchaudhary/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/akashchaudhary/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/akashchaudhary/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/akashchaudhary/.m2/repository/io/rest-assured/rest-assured-all/4.3.3/rest-assured-all-4.3.3.jar:/Users/akashchaudhary/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/akashchaudhary/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/akashchaudhary/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/akashchaudhary/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/akashchaudhary/.m2/repository/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar:/Users/akashchaudhary/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/akashchaudhary/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/akashchaudhary/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/akashchaudhary/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/akashchaudhary/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/akashchaudhary/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/akashchaudhary/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10/jackson-databind-2.9.10.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar:/Users/akashchaudhary/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/akashchaudhary/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/akashchaudhary/.m2/repository/io/cucumber/cucumber-picocontainer/6.8.1/cucumber-picocontainer-6.8.1.jar:/Users/akashchaudhary/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi-ooxml/3.7/poi-ooxml-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi/3.7/poi-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.7/poi-ooxml-schemas-3.7.jar:/Users/akashchaudhary/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/akashchaudhary/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/akashchaudhary/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0/geronimo-stax-api_1.0_spec-1.0.jar:/Users/akashchaudhary/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/akashchaudhary/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
+    <property name="surefire.test.class.path" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/test-classes:/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/classes:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured/4.3.3/rest-assured-4.3.3.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy/3.0.7/groovy-3.0.7.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy-xml/3.0.7/groovy-xml-3.0.7.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpclient/4.5.3/httpclient-4.5.3.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpcore/4.4.6/httpcore-4.4.6.jar:/Users/kukdi/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2.jar:/Users/kukdi/.m2/repository/commons-codec/commons-codec/1.9/commons-codec-1.9.jar:/Users/kukdi/.m2/repository/org/apache/httpcomponents/httpmime/4.5.3/httpmime-4.5.3.jar:/Users/kukdi/.m2/repository/org/hamcrest/hamcrest/2.1/hamcrest-2.1.jar:/Users/kukdi/.m2/repository/org/ccil/cowan/tagsoup/tagsoup/1.2.1/tagsoup-1.2.1.jar:/Users/kukdi/.m2/repository/io/rest-assured/json-path/4.3.3/json-path-4.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/xml-path/4.3.3/xml-path-4.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured-common/4.3.3/rest-assured-common-4.3.3.jar:/Users/kukdi/.m2/repository/org/apache/commons/commons-lang3/3.11/commons-lang3-3.11.jar:/Users/kukdi/.m2/repository/jakarta/xml/bind/jakarta.xml.bind-api/2.3.3/jakarta.xml.bind-api-2.3.3.jar:/Users/kukdi/.m2/repository/com/sun/xml/bind/jaxb-impl/2.3.3/jaxb-impl-2.3.3.jar:/Users/kukdi/.m2/repository/io/rest-assured/json-schema-validator/4.3.3/json-schema-validator-4.3.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/json-schema-validator/2.2.14/json-schema-validator-2.2.14.jar:/Users/kukdi/.m2/repository/com/google/guava/guava/28.2-android/guava-28.2-android.jar:/Users/kukdi/.m2/repository/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar:/Users/kukdi/.m2/repository/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/Users/kukdi/.m2/repository/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar:/Users/kukdi/.m2/repository/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar:/Users/kukdi/.m2/repository/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/jackson-coreutils-equivalence/1.0/jackson-coreutils-equivalence-1.0.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/jackson-coreutils/2.0/jackson-coreutils-2.0.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/msg-simple/1.2/msg-simple-1.2.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/btf/1.3/btf-1.3.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/json-schema-core/1.2.14/json-schema-core-1.2.14.jar:/Users/kukdi/.m2/repository/com/github/java-json-tools/uri-template/0.10/uri-template-0.10.jar:/Users/kukdi/.m2/repository/org/mozilla/rhino/1.7.7.2/rhino-1.7.7.2.jar:/Users/kukdi/.m2/repository/com/sun/mail/mailapi/1.6.2/mailapi-1.6.2.jar:/Users/kukdi/.m2/repository/joda-time/joda-time/2.10.5/joda-time-2.10.5.jar:/Users/kukdi/.m2/repository/com/googlecode/libphonenumber/libphonenumber/8.11.1/libphonenumber-8.11.1.jar:/Users/kukdi/.m2/repository/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.jar:/Users/kukdi/.m2/repository/net/sf/jopt-simple/jopt-simple/5.0.4/jopt-simple-5.0.4.jar:/Users/kukdi/.m2/repository/io/rest-assured/rest-assured-all/4.3.3/rest-assured-all-4.3.3.jar:/Users/kukdi/.m2/repository/jakarta/activation/jakarta.activation-api/1.2.2/jakarta.activation-api-1.2.2.jar:/Users/kukdi/.m2/repository/org/codehaus/groovy/groovy-json/3.0.7/groovy-json-3.0.7.jar:/Users/kukdi/.m2/repository/org/slf4j/slf4j-api/1.7.25/slf4j-api-1.7.25.jar:/Users/kukdi/.m2/repository/org/slf4j/slf4j-simple/1.7.25/slf4j-simple-1.7.25.jar:/Users/kukdi/.m2/repository/org/apache/commons/commons-collections4/4.3/commons-collections4-4.3.jar:/Users/kukdi/.m2/repository/org/testng/testng/6.14.3/testng-6.14.3.jar:/Users/kukdi/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/kukdi/.m2/repository/org/apache-extras/beanshell/bsh/2.0b6/bsh-2.0b6.jar:/Users/kukdi/.m2/repository/com/aventstack/extentreports/3.1.5/extentreports-3.1.5.jar:/Users/kukdi/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar:/Users/kukdi/.m2/repository/org/mongodb/mongodb-driver/3.3.0/mongodb-driver-3.3.0.jar:/Users/kukdi/.m2/repository/org/mongodb/bson/3.3.0/bson-3.3.0.jar:/Users/kukdi/.m2/repository/org/mongodb/mongodb-driver-core/3.3.0/mongodb-driver-core-3.3.0.jar:/Users/kukdi/.m2/repository/org/jsoup/jsoup/1.9.2/jsoup-1.9.2.jar:/Users/kukdi/.m2/repository/com/google/code/gson/gson/2.8.0/gson-2.8.0.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.9.10/jackson-databind-2.9.10.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.9.10/jackson-annotations-2.9.10.jar:/Users/kukdi/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.9.10/jackson-core-2.9.10.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-java/6.9.1/cucumber-java-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-core/6.9.1/cucumber-core-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-gherkin/6.9.1/cucumber-gherkin-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-gherkin-messages/6.9.1/cucumber-gherkin-messages-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/messages/13.2.1/messages-13.2.1.jar:/Users/kukdi/.m2/repository/io/cucumber/tag-expressions/3.0.0/tag-expressions-3.0.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-expressions/10.3.0/cucumber-expressions-10.3.0.jar:/Users/kukdi/.m2/repository/io/cucumber/datatable/3.5.0/datatable-3.5.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-plugin/6.9.1/cucumber-plugin-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/docstring/6.9.1/docstring-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/html-formatter/9.0.0/html-formatter-9.0.0.jar:/Users/kukdi/.m2/repository/io/cucumber/create-meta/2.0.4/create-meta-2.0.4.jar:/Users/kukdi/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-testng/6.9.1/cucumber-testng-6.9.1.jar:/Users/kukdi/.m2/repository/io/cucumber/cucumber-picocontainer/6.8.1/cucumber-picocontainer-6.8.1.jar:/Users/kukdi/.m2/repository/org/picocontainer/picocontainer/2.15/picocontainer-2.15.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi-ooxml/3.7/poi-ooxml-3.7.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi/3.7/poi-3.7.jar:/Users/kukdi/.m2/repository/org/apache/poi/poi-ooxml-schemas/3.7/poi-ooxml-schemas-3.7.jar:/Users/kukdi/.m2/repository/org/apache/xmlbeans/xmlbeans/2.3.0/xmlbeans-2.3.0.jar:/Users/kukdi/.m2/repository/stax/stax-api/1.0.1/stax-api-1.0.1.jar:/Users/kukdi/.m2/repository/org/apache/geronimo/specs/geronimo-stax-api_1.0_spec/1.0/geronimo-stax-api_1.0_spec-1.0.jar:/Users/kukdi/.m2/repository/dom4j/dom4j/1.6.1/dom4j-1.6.1.jar:/Users/kukdi/.m2/repository/xml-apis/xml-apis/1.0.b2/xml-apis-1.0.b2.jar:"/>
     <property name="sun.cpu.endian" value="little"/>
-    <property name="user.home" value="/Users/akashchaudhary"/>
+    <property name="user.home" value="/Users/kukdi"/>
     <property name="user.language" value="en"/>
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="java.version.date" value="2020-10-20"/>
     <property name="java.home" value="/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home"/>
     <property name="file.separator" value="/"/>
-    <property name="basedir" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation"/>
+    <property name="basedir" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation/target/surefire/surefirebooter17839492697786916561.jar"/>
+    <property name="surefire.real.class.path" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation/target/surefire/surefirebooter12802186238529460538.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.1+9"/>
-    <property name="user.name" value="akashchaudhary"/>
+    <property name="user.name" value="kukdi"/>
     <property name="path.separator" value=":"/>
-    <property name="os.version" value="10.16"/>
+    <property name="os.version" value="11.2"/>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="file.encoding" value="UTF-8"/>
     <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
-    <property name="localRepository" value="/Users/akashchaudhary/.m2/repository"/>
+    <property name="localRepository" value="/Users/kukdi/.m2/repository"/>
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
-    <property name="suiteXml" value="cukesTestNG.xml"/>
-    <property name="java.io.tmpdir" value="/var/folders/hb/420l2c012s9dfrjtw774g8680000gp/T/"/>
+    <property name="suiteXml" value="testng.xml"/>
+    <property name="java.io.tmpdir" value="/var/folders/kj/9y_hxljd0zgfcq65t3bwf5yh0000gn/T/"/>
     <property name="java.version" value="15.0.1"/>
-    <property name="user.dir" value="/Users/akashchaudhary/IdeaProjects/restful-booking-api-automation"/>
+    <property name="user.dir" value="/Users/kukdi/Desktop/Take home test solution/Task2/restful-booking-api-automation"/>
     <property name="os.arch" value="x86_64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="java.library.path" value="/Users/akashchaudhary/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.library.path" value="/Users/kukdi/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
     <property name="java.vendor" value="N/A"/>
     <property name="java.vm.version" value="15.0.1+9"/>
@@ -55,10 +55,8 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="runScenario[&quot;We need to validate if data in Get api response is equal to the last updated or created booking request&quot;, &quot;Optional[First Solution of Task 2 using multiple test scenarios]&quot;](1)" classname="test.missionMarsTests.cucumber.CucumberTask2TestRunner" time="9.274">
-    <system-out><![CDATA[
-Scenario Outline: We need to validate if data in Get api response is equal to the last updated or created booking request &amp#27;[90m# src/main/resources/features/firstSolution.feature:18&amp#27;[0m
-Request method:	POST
+  <testcase name="createBookingAndValidateResponseHTTPStatusCode200[Oskar, MM, 2021-02-19, 2021-02-21, NA, 0, 1200](1)" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="2.046">
+    <system-out><![CDATA[Request method:	POST
 Request URI:	https://restful-booker.herokuapp.com/auth
 Proxy:			<none>
 Request params:	<none>
@@ -80,16 +78,13 @@ Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
 Content-Length: 27
-Etag: W/"1b-7FBM9D1UBaVTcy9YcJQQnIp+dG0"
-Date: Fri, 12 Feb 2021 16:07:51 GMT
+Etag: W/"1b-3IQYleJoSmQ2tVoB1jGFTaM4hls"
+Date: Fri, 12 Feb 2021 17:50:16 GMT
 Via: 1.1 vegur
 
 {
-    "token": "a61538b246d2292"
+    "token": "8d97331d63dbdb1"
 }
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mValid Auth token is created successfully&amp#27;[0m                                                                          &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.AuthStepDefs.validAuthTokenIsCreatedSuccessfully()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mwe have &amp#27;[0m&amp#27;[32m&amp#27;[1m'2021-02-18'&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m'2021-02-28'&amp#27;[0m&amp#27;[32m dates of astronaut &amp#27;[0m&amp#27;[32m&amp#27;[1m'Roger'&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m'Pillai'&amp#27;[0m                                     &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.weHaveCheckinAndCheckoutDatesOfAstronautFirstnameAndLastname(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mour astronaut has paid &amp#27;[0m&amp#27;[32m&amp#27;[1m'false'&amp#27;[0m&amp#27;[32m and has additional choice for &amp#27;[0m&amp#27;[32m&amp#27;[1m'Hot Chocolate'&amp#27;[0m&amp#27;[32m and agreed to pay &amp#27;[0m&amp#27;[32m&amp#27;[1m'500'&amp#27;[0m                &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.ourAstronautHasPaidDepositpaidAndHasAdditionalChoiceForAdditionalneedsAndAgreedToPayTotalprice(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
 Request method:	POST
 Request URI:	https://restful-booker.herokuapp.com/booking
 Proxy:			<none>
@@ -103,14 +98,14 @@ Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstname": "Roger",
-    "lastname": "Pillai",
+    "firstname": "Oskar",
+    "lastname": "MM",
     "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
+        "checkin": "2021-02-19",
+        "checkout": "2021-02-21"
     },
-    "totalprice": 500,
-    "additionalneeds": "Hot Chocolate",
+    "totalprice": 1200,
+    "additionalneeds": "NA",
     "depositpaid": false
 }
 HTTP/1.1 200 OK
@@ -118,156 +113,55 @@ Server: Cowboy
 Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 203
-Etag: W/"cb-QgLXs2pMJK1tQJvTw8/0rkeoMdU"
-Date: Fri, 12 Feb 2021 16:07:55 GMT
+Content-Length: 189
+Etag: W/"bd-hiJHgNpddt8p8Xqfk1gVCVrqXOg"
+Date: Fri, 12 Feb 2021 17:50:20 GMT
 Via: 1.1 vegur
 
 {
-    "bookingid": 12,
+    "bookingid": 21,
     "booking": {
-        "firstname": "Roger",
-        "lastname": "Pillai",
-        "totalprice": 500,
+        "firstname": "Oskar",
+        "lastname": "MM",
+        "totalprice": 1200,
         "depositpaid": false,
         "bookingdates": {
-            "checkin": "2021-02-18",
-            "checkout": "2021-02-28"
+            "checkin": "2021-02-19",
+            "checkout": "2021-02-21"
         },
-        "additionalneeds": "Hot Chocolate"
+        "additionalneeds": "NA"
     }
 }
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe &amp#27;[0m&amp#27;[32m&amp#27;[1m'create'&amp#27;[0m&amp#27;[32m bookings for our astronauts&amp#27;[0m                                                                            &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.weActionBookingsForOurAstronauts(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mwe should get HTTP response code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                                               &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.weShouldGetHTTPResponseCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should have &amp#27;[0m&amp#27;[32m&amp#27;[1m"bookingid"&amp#27;[0m&amp#27;[32m non null&amp#27;[0m                                                                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.responseShouldHaveNonNull(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwe shall get data in response equal to the request we made for &amp#27;[0m&amp#27;[32m&amp#27;[1m'create'&amp#27;[0m                                             &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.theDataGivenInResponseBodyMustBeEqualToTheDataInActionRequest(java.lang.String)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=a61538b246d2292
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 176
-Etag: W/"b0-gCeMwtlej4Fy1EoBHUVqTUTfR4s"
-Date: Fri, 12 Feb 2021 16:07:56 GMT
-Via: 1.1 vegur
-
-{
-    "firstname": "Roger",
-    "lastname": "Pillai",
-    "totalprice": 500,
-    "depositpaid": false,
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
-    },
-    "additionalneeds": "Hot Chocolate"
-}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe make a call to GetBookings API with bookingId&amp#27;[0m                                                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.GetBookingStepDefs.weMakeACallToGetBookingsAPI()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mdata given in response body should be equal to the last actual data from &amp#27;[0m&amp#27;[32m&amp#27;[1m'create'&amp#27;[0m&amp#27;[32m event&amp#27;[0m                            &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.dataGivenInResponseBodyShouldBeEqualToTheLastActualDataFromActionEvent(java.lang.String)&amp#27;[0m
 ]]></system-out>
     <system-err><![CDATA[[main] INFO main.java.api.auth.AuthApi - Sending request: 
+[main] INFO test.missionMarsTests.testNG.TestNGSolutionTask2Test - Auth token fetched successfully
 [main] INFO main.java.api.booking.CreateBookingApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;We need to validate if data in Get api response is equal to the last updated or created booking request&quot;, &quot;Optional[First Solution of Task 2 using multiple test scenarios]&quot;](2)" classname="test.missionMarsTests.cucumber.CucumberTask2TestRunner" time="7.255">
-    <system-out><![CDATA[
-Scenario Outline: We need to validate if data in Get api response is equal to the last updated or created booking request &amp#27;[90m# src/main/resources/features/firstSolution.feature:19&amp#27;[0m
-Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/auth
+  <testcase name="verifyThatCreateResponseShouldBeEqualToRequest" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="0"/>
+  <testcase name="updateBookingsAndValidateResponseHTTPStatusCode200" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="1.803">
+    <system-out><![CDATA[Request method:	PUT
+Request URI:	https://restful-booker.herokuapp.com/booking/21
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "username": "admin",
-    "password": "password123"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-AFRvC/eiPpUQFwOS5D32E8TlJ1E"
-Date: Fri, 12 Feb 2021 16:07:58 GMT
-Via: 1.1 vegur
-
-{
-    "token": "f1df08454a83088"
-}
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mValid Auth token is created successfully&amp#27;[0m                                                                          &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.AuthStepDefs.validAuthTokenIsCreatedSuccessfully()&amp#27;[0m
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mwe have &amp#27;[0m&amp#27;[32m&amp#27;[1m'2021-02-18'&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m'2021-02-28'&amp#27;[0m&amp#27;[32m dates of astronaut &amp#27;[0m&amp#27;[32m&amp#27;[1m'Roger'&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m'Pillai'&amp#27;[0m                                     &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.weHaveCheckinAndCheckoutDatesOfAstronautFirstnameAndLastname(java.lang.String,java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mour astronaut has paid &amp#27;[0m&amp#27;[32m&amp#27;[1m'true'&amp#27;[0m&amp#27;[32m and has additional choice for &amp#27;[0m&amp#27;[32m&amp#27;[1m'Hot Chocolate'&amp#27;[0m&amp#27;[32m and agreed to pay &amp#27;[0m&amp#27;[32m&amp#27;[1m'500'&amp#27;[0m                 &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.ourAstronautHasPaidDepositpaidAndHasAdditionalChoiceForAdditionalneedsAndAgreedToPayTotalprice(java.lang.String,java.lang.String,java.lang.String)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking?firstname=Roger&lastname=Pillai
-Proxy:			<none>
-Request params:	<none>
-Query params:	firstname=Roger
-				lastname=Pillai
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 18
-Etag: W/"12-B1FDHQy55Vx+mYiWn205cGReR78"
-Date: Fri, 12 Feb 2021 16:08:00 GMT
-Via: 1.1 vegur
-
-[
-    {
-        "bookingid": 12
-    }
-]
-Request method:	PUT
-Request URI:	https://restful-booker.herokuapp.com/booking/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=f1df08454a83088
+Headers:		Cookie=token=8d97331d63dbdb1
 				Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
 Multiparts:		<none>
 Body:
 {
-    "firstname": "Roger",
-    "lastname": "Pillai",
+    "firstname": "Oskar",
+    "lastname": "MM",
     "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
+        "checkin": "2021-02-19",
+        "checkout": "2021-02-21"
     },
-    "totalprice": 500,
-    "additionalneeds": "Hot Chocolate",
+    "totalprice": 1200,
+    "additionalneeds": "NA",
     "depositpaid": true
 }
 HTTP/1.1 200 OK
@@ -275,34 +169,36 @@ Server: Cowboy
 Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 175
-Etag: W/"af-+Vtzug1QxMp+xc35koI1/XIWbAw"
-Date: Fri, 12 Feb 2021 16:08:02 GMT
+Content-Length: 161
+Etag: W/"a1-76uX1ru5xep4N7FQ7Qu4MdOf8Uk"
+Date: Fri, 12 Feb 2021 17:50:22 GMT
 Via: 1.1 vegur
 
 {
-    "firstname": "Roger",
-    "lastname": "Pillai",
-    "totalprice": 500,
+    "firstname": "Oskar",
+    "lastname": "MM",
+    "totalprice": 1200,
     "depositpaid": true,
     "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
+        "checkin": "2021-02-19",
+        "checkout": "2021-02-21"
     },
-    "additionalneeds": "Hot Chocolate"
+    "additionalneeds": "NA"
 }
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe &amp#27;[0m&amp#27;[32m&amp#27;[1m'update'&amp#27;[0m&amp#27;[32m bookings for our astronauts&amp#27;[0m                                                                            &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.weActionBookingsForOurAstronauts(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mwe should get HTTP response code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                                               &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.weShouldGetHTTPResponseCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should have &amp#27;[0m&amp#27;[32m&amp#27;[1m"bookingid"&amp#27;[0m&amp#27;[32m non null&amp#27;[0m                                                                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.BookAndUpdateStepDefs.responseShouldHaveNonNull(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mwe shall get data in response equal to the request we made for &amp#27;[0m&amp#27;[32m&amp#27;[1m'update'&amp#27;[0m                                             &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.theDataGivenInResponseBodyMustBeEqualToTheDataInActionRequest(java.lang.String)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/12
+]]></system-out>
+    <system-err><![CDATA[[main] INFO main.java.api.booking.UpdateBookingApi - Sending request: 
+]]></system-err>
+  </testcase>
+  <testcase name="verifyThatUpdatedResponseShouldBeEqualToRequest" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="0.001"/>
+  <testcase name="retrieveUpdatedBookingsAndAssertResponseWithPreviousEventResponse" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="1.745">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/21
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Cookie=token=f1df08454a83088
+Headers:		Cookie=token=8d97331d63dbdb1
 				Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
@@ -313,101 +209,35 @@ Server: Cowboy
 Connection: keep-alive
 X-Powered-By: Express
 Content-Type: application/json; charset=utf-8
-Content-Length: 175
-Etag: W/"af-+Vtzug1QxMp+xc35koI1/XIWbAw"
-Date: Fri, 12 Feb 2021 16:08:03 GMT
+Content-Length: 161
+Etag: W/"a1-76uX1ru5xep4N7FQ7Qu4MdOf8Uk"
+Date: Fri, 12 Feb 2021 17:50:24 GMT
 Via: 1.1 vegur
 
 {
-    "firstname": "Roger",
-    "lastname": "Pillai",
-    "totalprice": 500,
+    "firstname": "Oskar",
+    "lastname": "MM",
+    "totalprice": 1200,
     "depositpaid": true,
     "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
+        "checkin": "2021-02-19",
+        "checkout": "2021-02-21"
     },
-    "additionalneeds": "Hot Chocolate"
+    "additionalneeds": "NA"
 }
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe make a call to GetBookings API with bookingId&amp#27;[0m                                                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.GetBookingStepDefs.weMakeACallToGetBookingsAPI()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mdata given in response body should be equal to the last actual data from &amp#27;[0m&amp#27;[32m&amp#27;[1m'update'&amp#27;[0m&amp#27;[32m event&amp#27;[0m                            &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.dataGivenInResponseBodyShouldBeEqualToTheLastActualDataFromActionEvent(java.lang.String)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO main.java.api.auth.AuthApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingIdApi - Sending request: 
-[main] INFO main.java.api.booking.UpdateBookingApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
+    <system-err><![CDATA[[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;Get and delete the bookings for our astronauts&quot;, &quot;Optional[First Solution of Task 2 using multiple test scenarios]&quot;](3)" classname="test.missionMarsTests.cucumber.CucumberTask2TestRunner" time="6.973">
-    <system-out><![CDATA[
-Scenario Outline: Get and delete the bookings for our astronauts      &amp#27;[90m# src/main/resources/features/firstSolution.feature:31&amp#27;[0m
-Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/auth
+  <testcase name="deleteBookingsAndValidateResponseHTTPStatusCode201" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="1.833">
+    <system-out><![CDATA[Request method:	DELETE
+Request URI:	https://restful-booker.herokuapp.com/booking/21
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "username": "admin",
-    "password": "password123"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-abCdPjenwa6TwUkEqXB7eQOaBxQ"
-Date: Fri, 12 Feb 2021 16:08:05 GMT
-Via: 1.1 vegur
-
-{
-    "token": "35b6ef885fcc566"
-}
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mValid Auth token is created successfully&amp#27;[0m                      &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.AuthStepDefs.validAuthTokenIsCreatedSuccessfully()&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking?firstname=Roger&lastname=Pillai
-Proxy:			<none>
-Request params:	<none>
-Query params:	firstname=Roger
-				lastname=Pillai
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 18
-Etag: W/"12-B1FDHQy55Vx+mYiWn205cGReR78"
-Date: Fri, 12 Feb 2021 16:08:07 GMT
-Via: 1.1 vegur
-
-[
-    {
-        "bookingid": 12
-    }
-]
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mwe have &amp#27;[0m&amp#27;[32m&amp#27;[1m'Roger'&amp#27;[0m&amp#27;[32m and &amp#27;[0m&amp#27;[32m&amp#27;[1m'Pillai'&amp#27;[0m&amp#27;[32m and bookingIds of our astronauts&amp#27;[0m &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.GetAndDeleteStepDefs.weHaveFirstnameAndLastnameOfOurAstronauts(java.lang.String,java.lang.String)&amp#27;[0m
-Request method:	DELETE
-Request URI:	https://restful-booker.herokuapp.com/booking/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=35b6ef885fcc566
+Headers:		Cookie=token=8d97331d63dbdb1
 				Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
@@ -420,296 +250,23 @@ X-Powered-By: Express
 Content-Type: text/plain; charset=utf-8
 Content-Length: 7
 Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
-Date: Fri, 12 Feb 2021 16:08:09 GMT
+Date: Fri, 12 Feb 2021 17:50:26 GMT
 Via: 1.1 vegur
 
 Created
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe delete these bookings by their ID&amp#27;[0m                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.GetAndDeleteStepDefs.weDeleteTheseBookingsByTheirID()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mwe should get HTTP response code &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.weShouldGetHTTPResponseCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should be equal to &amp#27;[0m&amp#27;[32m&amp#27;[1m"Created"&amp#27;[0m                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.responseShouldBeBlank(java.lang.String)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/12
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=35b6ef885fcc566
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 Not Found
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: text/plain; charset=utf-8
-Content-Length: 9
-Etag: W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
-Date: Fri, 12 Feb 2021 16:08:11 GMT
-Via: 1.1 vegur
-
-Not Found
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe make a call to GetBookings API with bookingId&amp#27;[0m               &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.GetBookingStepDefs.weMakeACallToGetBookingsAPI()&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mwe should get HTTP response code &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                           &amp#27;[90m# main.java.cucumber.stepDefinitions.firstSolutionStepDefs.CommonStepDefs.weShouldGetHTTPResponseCode(int)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO main.java.api.auth.AuthApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingIdApi - Sending request: 
-[main] INFO main.java.api.booking.DeleteApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
+    <system-err><![CDATA[[main] INFO main.java.api.booking.DeleteApi - Sending request: 
 ]]></system-err>
   </testcase>
-  <testcase name="runScenario[&quot;End to end booking flow for our Billie Mars astronaut based on Task 2 requirements&quot;, &quot;Optional[Second solution of Task 2 with end to end CRUD operation in one scenario]&quot;](4)" classname="test.missionMarsTests.cucumber.CucumberTask2TestRunner" time="12.474">
-    <system-out><![CDATA[
-Scenario: End to end booking flow for our Billie Mars astronaut based on Task 2 requirements       &amp#27;[90m# src/main/resources/features/secondSolution.feature:3&amp#27;[0m
-Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/auth
+  <testcase name="retrieveDeletedBookingsAndValidateResponseCodeHTTPStatusCode404" classname="test.missionMarsTests.testNG.TestNGSolutionTask2Test" time="1.846">
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://restful-booker.herokuapp.com/booking/21
 Proxy:			<none>
 Request params:	<none>
 Query params:	<none>
 Form params:	<none>
 Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "username": "admin",
-    "password": "password123"
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 27
-Etag: W/"1b-jdGVE0a2UOyB6bISdkHDmx+h+TE"
-Date: Fri, 12 Feb 2021 16:08:12 GMT
-Via: 1.1 vegur
-
-{
-    "token": "d194a7b50284dff"
-}
-  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mour astronaut is an authorised user and has following request details available to proceed&amp#27;[0m &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.ourAstronautIsAnAuthorisedUserAndHasFollowingRequestDetailsAvailableToProceed()&amp#27;[0m
-Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/booking
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "firstname": "Solomon",
-    "lastname": "Northup",
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
-    },
-    "totalprice": 1200,
-    "additionalneeds": "Hot Chocolate",
-    "depositpaid": false
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 207
-Etag: W/"cf-R6sZ1uuXLbvXkLz1bOy3ehhd4Lw"
-Date: Fri, 12 Feb 2021 16:08:14 GMT
-Via: 1.1 vegur
-
-{
-    "bookingid": 13,
-    "booking": {
-        "firstname": "Solomon",
-        "lastname": "Northup",
-        "totalprice": 1200,
-        "depositpaid": false,
-        "bookingdates": {
-            "checkin": "2021-02-18",
-            "checkout": "2021-02-28"
-        },
-        "additionalneeds": "Hot Chocolate"
-    }
-}
-Request method:	POST
-Request URI:	https://restful-booker.herokuapp.com/booking
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "firstname": "Billie",
-    "lastname": "Martian",
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-02-28"
-    },
-    "totalprice": 1200,
-    "additionalneeds": "Samosa with tea",
-    "depositpaid": true
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 207
-Etag: W/"cf-VaHT6vlTWe/BaxWEo7c619NXUAs"
-Date: Fri, 12 Feb 2021 16:08:16 GMT
-Via: 1.1 vegur
-
-{
-    "bookingid": 14,
-    "booking": {
-        "firstname": "Billie",
-        "lastname": "Martian",
-        "totalprice": 1200,
-        "depositpaid": true,
-        "bookingdates": {
-            "checkin": "2021-02-18",
-            "checkout": "2021-02-28"
-        },
-        "additionalneeds": "Samosa with tea"
-    }
-}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe perform &amp#27;[0m&amp#27;[32m&amp#27;[1m"create"&amp#27;[0m&amp#27;[32m booking request to the restful-booker App with following data&amp#27;[0m           &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.wePerformBookingRequestToTheRestfulBookerApp(java.lang.String,io.cucumber.datatable.DataTable)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mresponse should have HTTP status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveHTTPStatusCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should have &amp#27;[0m&amp#27;[32m&amp#27;[1m"bookingid"&amp#27;[0m&amp#27;[32m and it should not be null&amp#27;[0m                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveAndItShouldNotBeNull(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mdata given in response body should be equal to the data in &amp#27;[0m&amp#27;[32m&amp#27;[1m"create"&amp#27;[0m&amp#27;[32m request&amp#27;[0m                  &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.dataGivenInResponseBodyShouldBeEqualToTheDataInRequest(java.lang.String)&amp#27;[0m
-Request method:	PUT
-Request URI:	https://restful-booker.herokuapp.com/booking/13
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=d194a7b50284dff
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:
-{
-    "firstname": "Solomon",
-    "lastname": "Northup",
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-03-01"
-    },
-    "totalprice": 1200,
-    "additionalneeds": "Need rover to carry luggage",
-    "depositpaid": true
-}
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 193
-Etag: W/"c1-dIcBAATUAhkXDDYe8yu77ENGK7k"
-Date: Fri, 12 Feb 2021 16:08:17 GMT
-Via: 1.1 vegur
-
-{
-    "firstname": "Solomon",
-    "lastname": "Northup",
-    "totalprice": 1200,
-    "depositpaid": true,
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-03-01"
-    },
-    "additionalneeds": "Need rover to carry luggage"
-}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe perform &amp#27;[0m&amp#27;[32m&amp#27;[1m"update"&amp#27;[0m&amp#27;[32m booking request to the restful-booker App with following data&amp#27;[0m           &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.wePerformBookingRequestToTheRestfulBookerApp(java.lang.String,io.cucumber.datatable.DataTable)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mresponse should have HTTP status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveHTTPStatusCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mdata given in response body should be equal to the data in &amp#27;[0m&amp#27;[32m&amp#27;[1m"update"&amp#27;[0m&amp#27;[32m request&amp#27;[0m                  &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.dataGivenInResponseBodyShouldBeEqualToTheDataInRequest(java.lang.String)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/13
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=d194a7b50284dff
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 200 OK
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: application/json; charset=utf-8
-Content-Length: 193
-Etag: W/"c1-dIcBAATUAhkXDDYe8yu77ENGK7k"
-Date: Fri, 12 Feb 2021 16:08:20 GMT
-Via: 1.1 vegur
-
-{
-    "firstname": "Solomon",
-    "lastname": "Northup",
-    "totalprice": 1200,
-    "depositpaid": true,
-    "bookingdates": {
-        "checkin": "2021-02-18",
-        "checkout": "2021-03-01"
-    },
-    "additionalneeds": "Need rover to carry luggage"
-}
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m the created booking by booking Id&amp#27;[0m                                                  &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.weTheCreatedBookingByBookingId(java.lang.String)&amp#27;[0m
-  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mresponse should have HTTP status code &amp#27;[0m&amp#27;[32m&amp#27;[1m200&amp#27;[0m                                                   &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveHTTPStatusCode(int)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mdata given in response body should be equal to the data in &amp#27;[0m&amp#27;[32m&amp#27;[1m"update"&amp#27;[0m&amp#27;[32m request&amp#27;[0m                  &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.dataGivenInResponseBodyShouldBeEqualToTheDataInRequest(java.lang.String)&amp#27;[0m
-Request method:	DELETE
-Request URI:	https://restful-booker.herokuapp.com/booking/13
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=d194a7b50284dff
-				Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 201 Created
-Server: Cowboy
-Connection: keep-alive
-X-Powered-By: Express
-Content-Type: text/plain; charset=utf-8
-Content-Length: 7
-Etag: W/"7-rM9AyJuqT6iOan/xHh+AW+7K/T8"
-Date: Fri, 12 Feb 2021 16:08:21 GMT
-Via: 1.1 vegur
-
-Created
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe &amp#27;[0m&amp#27;[32m&amp#27;[1m"DELETE"&amp#27;[0m&amp#27;[32m the created booking by booking Id&amp#27;[0m                                               &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.weTheCreatedBookingByBookingId(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should have HTTP status code &amp#27;[0m&amp#27;[32m&amp#27;[1m201&amp#27;[0m                                                    &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveHTTPStatusCode(int)&amp#27;[0m
-Request method:	GET
-Request URI:	https://restful-booker.herokuapp.com/booking/13
-Proxy:			<none>
-Request params:	<none>
-Query params:	<none>
-Form params:	<none>
-Path params:	<none>
-Headers:		Cookie=token=d194a7b50284dff
+Headers:		Cookie=token=8d97331d63dbdb1
 				Accept=*/*
 				Content-Type=application/json; charset=UTF-8
 Cookies:		<none>
@@ -722,20 +279,12 @@ X-Powered-By: Express
 Content-Type: text/plain; charset=utf-8
 Content-Length: 9
 Etag: W/"9-0gXL1ngzMqISxa6S1zx3F4wtLyg"
-Date: Fri, 12 Feb 2021 16:08:23 GMT
+Date: Fri, 12 Feb 2021 17:50:27 GMT
 Via: 1.1 vegur
 
 Not Found
-  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mwe &amp#27;[0m&amp#27;[32m&amp#27;[1m"GET"&amp#27;[0m&amp#27;[32m the created booking by booking Id&amp#27;[0m                                                  &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.weTheCreatedBookingByBookingId(java.lang.String)&amp#27;[0m
-  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mresponse should have HTTP status code &amp#27;[0m&amp#27;[32m&amp#27;[1m404&amp#27;[0m                                                    &amp#27;[90m# main.java.cucumber.stepDefinitions.secondSolutionStepDefs.TaskSolutionSingleStepDefs.responseShouldHaveHTTPStatusCode(int)&amp#27;[0m
 ]]></system-out>
-    <system-err><![CDATA[[main] INFO main.java.api.auth.AuthApi - Sending request: 
-[main] INFO main.java.api.booking.CreateBookingApi - Sending request: 
-[main] INFO main.java.api.booking.CreateBookingApi - Sending request: 
-[main] INFO main.java.api.booking.UpdateBookingApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
-[main] INFO main.java.api.booking.DeleteApi - Sending request: 
-[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
+    <system-err><![CDATA[[main] INFO main.java.api.booking.GetBookingApi - Sending request: 
 ]]></system-err>
   </testcase>
 </testsuite>
