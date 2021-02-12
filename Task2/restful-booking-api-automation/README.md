@@ -36,6 +36,7 @@ Java version: openjdk version "15.0.1" 2020-10-20
 
 ------------
 
+Make sure you are inside  `restful-booking-api-automation`  folder
 
 ```
 mvn clean install -DskipTests
